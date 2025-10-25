@@ -49,7 +49,7 @@ The stack was architected for a decoupled, microservice-oriented deployment, ens
 * **Conversational AI Design:** Demonstrates stateful, multi-turn reasoning with contextual slot-filling.
 
 #### 4.4 Databases
-* **Relational Database (PostgreSQL):** The system of record for all structured company data (customer profiles, order histories). Its ACID-compliant nature is essential for transactional integrity.
+* **Relational Database :** The system of record for all structured company data (customer profiles, order histories). Its ACID-compliant nature is essential for transactional integrity.
 * **MongoDB:** High-throughput NoSQL database for unstructured and semi-structured knowledge (FAQs, policies, conversation logs).
 
 ## 5. Request Lifecycle: A User Scenario
@@ -100,6 +100,10 @@ This project provides a robust foundation for several advanced features:
 
 ## 7. Project Demo
 *(A preview of the responsive React.js interface, demonstrating the multi-turn conversation and slot-filling capability.)*
+![Conversation Demo 1](./Conversation1.png)
+![Conversation Demo 2](./Conversation2.png)
+![Dark Mode](./DarkMode.png)
+![Light Mode](./LightMode.png)
 
 
 ## 8. License
