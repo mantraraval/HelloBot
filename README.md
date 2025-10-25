@@ -101,11 +101,6 @@ This project provides a robust foundation for several advanced features:
 ## 7. Project Demo
 *(A preview of the responsive React.js interface, demonstrating the multi-turn conversation and slot-filling capability.)*
 
-![Chatbot Demo](htt<img width="1920" height="1020" alt="Screenshot 2025-10-25 134057" src="https://github.c<<img width="1920" height="1020" alt="Screenshot 2025-10-25 135601" src="https://github.com/user-attachments/assets/93cbbac7-6567-4f7c-9948-bde3081788a3" />
-img width="1920" height="1020" alt="Screenshot 2025-10-25 135546" src="https://github.com/user-attachments/assets/c2c3ae6d-6a7e-416c-b04c-e2924e799957" />
-om/user-<img width="1920" height="1020" alt="Screenshot 2025-10-25 134128" src="https://github.com/user-attachments/assets/60f7b166-e679-4869-bcc8-3ef05533d92e" />
-attachments/assets/a4115478-1708-49eb-9461-8d5986b65ca3" />
-psType://your-image-link-here.png)
 
 ## 8. License
 This project is distributed under the MIT License.
