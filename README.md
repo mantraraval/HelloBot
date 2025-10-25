@@ -99,10 +99,10 @@ This project provides a robust foundation for several advanced features:
 * **Multi-Modal Input:** Expanding the interface to accept image uploads (e.g., a photo of a damaged product) for analysis.
 
 ## 7. Project Demo
-*(A preview of the responsive React.js interface, demonstrating the multi-turn conversation and slot-filling capability.)*
+![Light Mode](./LightMode.png)
+![Dark Mode](./DarkMode.png)
 ![Conversation Demo 1](./Conversation1.png)
 ![Conversation Demo 2](./Conversation2.png)
-![Dark Mode](./DarkMode.png)
 ![Light Mode](./LightMode.png)
 
 
