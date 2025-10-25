@@ -1,5 +1,5 @@
-# Orchestrated Generative AI Support Agent
-> A portfolio project demonstrating an advanced, secure, and multi-turn conversational AI. This agent leverages a Generative AI reasoning engine to transcend the limitations of traditional deterministic chatbots.
+# HelloBot: LLM-Powered Customer Support ChatBot
+> This project demonstrates an advanced, LLM-driven chatbot that fundamentally improves automated support by understanding intent rather than just matching keywords.
 
 **Author:** Mantra Raval
 **LinkedIn:** https://www.linkedin.com/in/mantraraval
