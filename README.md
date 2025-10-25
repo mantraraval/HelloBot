@@ -103,7 +103,7 @@ This project provides a robust foundation for several advanced features:
 ![Dark Mode](./DarkMode.png)
 ![Conversation Demo 1](./Conversation1.png)
 ![Conversation Demo 2](./Conversation2.png)
-![Light Mode](./LightMode.png)
+
 
 
 ## 8. License
