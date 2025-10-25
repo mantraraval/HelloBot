@@ -106,5 +106,4 @@ This project provides a robust foundation for several advanced features:
 
 
 
-## 8. License
-This project is distributed under the MIT License.
+
