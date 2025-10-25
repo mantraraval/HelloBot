@@ -1,8 +1,8 @@
 # Orchestrated Generative AI Support Agent
 > A portfolio project demonstrating an advanced, secure, and multi-turn conversational AI. This agent leverages a Generative AI reasoning engine to transcend the limitations of traditional deterministic chatbots.
 
-**Author:** [Mnatra Raval]
-**LinkedIn:** [Your LinkedIn URL]
+**Author:** Mantra Raval
+**LinkedIn:** https://www.linkedin.com/in/mantraraval
 
 ---
 
