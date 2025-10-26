@@ -43,7 +43,7 @@ The HelloBot system is built on a modern, decoupled architecture leveraging the 
 * **Frontend:** **React.js** to deliver a modern, single-page application (SPA) user interface.
 * **Structured Data:** A **Relational Database** (e.g., PostgreSQL, MySQL) for transactional and secure order data.
 * **Unstructured Data:** **MongoDB** for flexible storage of policies, FAQs, and general company knowledge.
-* **Workflow Visualization:** **Mermaid** for generating the architectural and lifecycle diagrams.
+
 
 ---
 
