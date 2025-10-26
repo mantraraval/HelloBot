@@ -48,37 +48,37 @@ The HelloBot system is built on a modern, decoupled architecture leveraging the 
 ---
 
 ## 🔄 5. Request Lifecycle: User Scenario
-1. **💬 Initial Query:**  
-      **User:** “What is my order status?”  
-      **System:** React.js client → Node.js API gateway.  
+1.  **💬 Initial Query:**
+    * **User:** “What is my order status?”
+    * **System:** React.js client → Node.js API gateway.
 
-2. **🧩 Intent & Slot Analysis (LLM Pass 1):**  
-      Python Service invokes LLM to analyze intent.  
-      **LLM Output:** `Intent = get_order_status`, `Missing Slot = order_id`.  
+2.  **🧩 Intent & Slot Analysis (LLM Pass 1):**
+    * Python Service invokes LLM to analyze intent.
+    * **LLM Output:** `Intent = get_order_status`, `Missing Slot = order_id`.
 
-3. **✍️ Dynamic Slot-Filling:**  
-      Python → LLM: Generate prompt to request missing order ID.  
-      **LLM → User:** “Could you please provide your order ID?”  
+3.  **✍️ Dynamic Slot-Filling:**
+    * Python → LLM: Generate prompt to request missing order ID.
+    * **LLM → User:** “Could you please provide your order ID?”
 
-4. **📊 Structured Data Retrieval (Relational DB):**  
-      **User:** “id-857591726814891”  
-      Python queries Relational Database:  
-      ```sql
-      SELECT status FROM orders WHERE order_id = 'id-857591726814891';
-      ```  
-      **DB Response:** `{ "status": "Packed" }`  
+4.  **📊 Structured Data Retrieval (Relational DB):**
+    * **User:** “id-857591726814891”
+    * Python queries Relational Database:
+        ```sql
+        SELECT status FROM orders WHERE order_id = 'id-857591726814891';
+        ```
+    * **DB Response:** `{ "status": "Packed" }`
 
-5. **📝 Generative Framing (LLM Pass 2):**  
-      Python → LLM: Frame response based on order status.  
-      **LLM → User:** “Your order (id-857591726814891) is packed and ready to be dispatched.”  
+5.  **📝 Generative Framing (LLM Pass 2):**
+    * Python → LLM: Frame response based on order status.
+    * **LLM → User:** “Your order (id-857591726814891) is packed and ready to be dispatched.”
 
-6. **📚 Follow-Up Query (Knowledge DB):**  
-      **User:** “How much time will it take?”  
-      Python → LLM: Queries MongoDB for general knowledge/policies.  
+6.  **📚 Follow-Up Query (Knowledge DB):**
+    * **User:** “How much time will it take?”
+    * Python → LLM: Queries MongoDB for general knowledge/policies.
 
-7. **✅ Final Answer (LLM Pass 3):**  
-      Python → LLM: Frame final response.  
-      **LLM → User:** “It will be delivered in 3 working days.”  
+7.  **✅ Final Answer (LLM Pass 3):**
+    * Python → LLM: Frame final response.
+    * **LLM → User:** “It will be delivered in 3 working days.”
 
 ---
 
