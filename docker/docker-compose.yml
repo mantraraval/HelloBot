@@ -1,0 +1,61 @@
+version: "3.9"
+
+services:
+  api-gateway:
+    build:
+      context: ../api-gateway
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    environment:
+      PYTHON_SERVICE_URL: http://python-service:8000
+    depends_on:
+      - python-service
+
+  python-service:
+    build:
+      context: ../python-service
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      HELLOBOT_SQL_DSN: postgresql+psycopg2://hellobot:hellobot@postgres:5432/hellobot
+      HELLOBOT_MONGO_DSN: mongodb://mongo:27017
+      HELLOBOT_MONGO_DB: hellobot_knowledge
+    depends_on:
+      - postgres
+      - mongo
+
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_BASE_URL: http://api-gateway:4000
+    depends_on:
+      - api-gateway
+
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: hellobot
+      POSTGRES_PASSWORD: hellobot
+      POSTGRES_DB: hellobot
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres-init:/docker-entrypoint-initdb.d
+
+  mongo:
+    image: mongo:7
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo-seed:/docker-entrypoint-initdb.d
+
+networks:
+  default:
+    name: hellobot-network
+

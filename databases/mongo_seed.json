@@ -1,0 +1,25 @@
+{
+  "delivery_time_policy": [
+    {
+      "title": "Standard Delivery Times",
+      "body": "For most regions, packed orders are dispatched within 24 hours and typically delivered within 3–5 business days. Remote areas may require up to 7 business days.",
+      "region": "global",
+      "version": 1
+    }
+  ],
+  "refund_policy": [
+    {
+      "title": "Refund Eligibility",
+      "body": "You can request a refund within 30 days of delivery if the item is unused, in original packaging, and accompanied by proof of purchase. Refunds are processed back to the original payment method within 5–10 business days after approval.",
+      "version": 1
+    }
+  ],
+  "shipping_guidelines": [
+    {
+      "title": "Shipping Guidelines",
+      "body": "Orders are shipped from our primary fulfillment centers on business days only. Address changes after dispatch are not guaranteed and may incur additional fees.",
+      "version": 1
+    }
+  ]
+}
+
